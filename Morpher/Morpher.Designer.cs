@@ -137,39 +137,47 @@
             // 
             imageBarH.Dock = DockStyle.Fill;
             imageBarH.Location = new Point(470, 64);
+            imageBarH.Maximum = 100;
             imageBarH.Name = "imageBarH";
             imageBarH.Size = new Size(356, 32);
             imageBarH.TabIndex = 2;
-            imageBarH.Value = 5;
+            imageBarH.Value = 50;
+            imageBarH.ValueChanged += imageParams_Change;
             // 
             // patternBarH
             // 
             patternBarH.Dock = DockStyle.Fill;
             patternBarH.Location = new Point(41, 64);
+            patternBarH.Maximum = 100;
             patternBarH.Name = "patternBarH";
             patternBarH.Size = new Size(356, 32);
             patternBarH.TabIndex = 3;
-            patternBarH.Value = 5;
+            patternBarH.Value = 50;
+            patternBarH.ValueChanged += patternParams_Change;
             // 
             // patternBarV
             // 
             patternBarV.Dock = DockStyle.Fill;
             patternBarV.Location = new Point(3, 102);
+            patternBarV.Maximum = 100;
             patternBarV.Name = "patternBarV";
             patternBarV.Orientation = Orientation.Vertical;
             patternBarV.Size = new Size(32, 356);
             patternBarV.TabIndex = 4;
-            patternBarV.Value = 5;
+            patternBarV.Value = 50;
+            patternBarV.ValueChanged += patternParams_Change;
             // 
             // imageBarV
             // 
             imageBarV.Dock = DockStyle.Fill;
             imageBarV.Location = new Point(432, 102);
+            imageBarV.Maximum = 100;
             imageBarV.Name = "imageBarV";
             imageBarV.Orientation = Orientation.Vertical;
             imageBarV.Size = new Size(32, 356);
             imageBarV.TabIndex = 5;
-            imageBarV.Value = 5;
+            imageBarV.Value = 50;
+            imageBarV.ValueChanged += imageParams_Change;
             // 
             // imageBox
             // 
